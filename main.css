@@ -1,0 +1,44 @@
+body {
+  background: green; }
+
+body div {
+  color: #000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bottom-nav-items {
+  display: flex;
+  justify-content: space-around;
+  height: 36px;
+  position: relative; }
+
+.item-icon {
+  font-size: 30px;
+  color: rebeccapurple; }
+
+.bottom-nav-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff; }
+
+.item-text {
+  font-size: 20;
+  padding-top: 10px; }
+
+.bottom-nav-item {
+  width: 40px;
+  position: relative; }
+
+.icon-message-container {
+  width: 100%;
+  top: 0;
+  transition: top .3s; }
+
+.bottom-nav-item.bottom-nav-item-active .icon-message-container {
+  position: absolute;
+  top: -34px;
+  width: 100%; }
