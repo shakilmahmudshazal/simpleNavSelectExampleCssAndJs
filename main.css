@@ -30,8 +30,11 @@ body div {
   padding-top: 10px; }
 
 .bottom-nav-item {
-  width: 40px;
-  position: relative; }
+  width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
 
 .icon-message-container {
   width: 100%;
@@ -42,3 +45,13 @@ body div {
   position: absolute;
   top: -34px;
   width: 100%; }
+
+.round-circle-item {
+  height: 50px;
+  width: 50px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -42px;
+  transform: translate(-50%, 0);
+  transition: left 0.5s; }
