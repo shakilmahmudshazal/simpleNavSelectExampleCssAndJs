@@ -5,7 +5,8 @@ document.querySelectorAll(".bottom-nav-item").forEach(function (el, index) {
     console.log(index);
     removeAllactiveClass();
     document.querySelectorAll(".bottom-nav-item")[index].className += " bottom-nav-item-active";
-    document.querySelector(".round-circle-item").style.left = "".concat(index * 20 + 10, "%");
+    var n = 100 / document.querySelectorAll(".bottom-nav-item").length;
+    document.querySelector(".round-circle-item").style.left = "".concat(index * n + n / 2, "%");
   });
 });
 
